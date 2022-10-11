@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppAlcoolEGasolina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bg3-NM-DlO">
+                                <rect key="frame" x="20" y="20.5" width="335" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="zGs-JY-f3J"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço Gasolina" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cl-CO-lkn">
+                                <rect key="frame" x="241" y="190" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgJ-ln-SsN">
+                                <rect key="frame" x="20" y="216" width="120" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="d5b-4y-UFb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9V6-g5-r3U">
+                                <rect key="frame" x="235" y="216" width="120" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="WV5-Lh-og6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU0-48-NH1">
+                                <rect key="frame" x="144.5" y="320" width="86" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Calcular"/>
+                                <connections>
+                                    <action selector="tappedCalculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vhf-r5-Vly"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço Alcool" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Cp-c3-Exd">
+                                <rect key="frame" x="20" y="190" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOg-cr-1Ok">
+                                <rect key="frame" x="20" y="400" width="335" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eFI-hh-7OK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wgJ-ln-SsN" firstAttribute="leading" secondItem="9Cp-c3-Exd" secondAttribute="leading" id="2da-bp-PQO"/>
+                            <constraint firstItem="9V6-g5-r3U" firstAttribute="trailing" secondItem="1cl-CO-lkn" secondAttribute="trailing" id="4XO-JA-Zrd"/>
+                            <constraint firstItem="9Cp-c3-Exd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6Vf-d1-EG8"/>
+                            <constraint firstItem="XOg-cr-1Ok" firstAttribute="top" secondItem="XU0-48-NH1" secondAttribute="bottom" constant="45" id="6pk-3S-c9N"/>
+                            <constraint firstItem="XOg-cr-1Ok" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9zJ-Qc-vFk"/>
+                            <constraint firstItem="XU0-48-NH1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ec8-DO-oVD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1cl-CO-lkn" secondAttribute="trailing" constant="20" id="Pae-eY-iy7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XOg-cr-1Ok" secondAttribute="trailing" constant="20" id="R0v-hm-ydZ"/>
+                            <constraint firstItem="1cl-CO-lkn" firstAttribute="top" secondItem="bg3-NM-DlO" secondAttribute="bottom" constant="20" id="Thh-oA-PID"/>
+                            <constraint firstItem="wgJ-ln-SsN" firstAttribute="top" secondItem="9Cp-c3-Exd" secondAttribute="bottom" constant="5" id="YHu-eO-fnE"/>
+                            <constraint firstItem="XU0-48-NH1" firstAttribute="top" secondItem="bg3-NM-DlO" secondAttribute="bottom" constant="150" id="f8g-xT-Dbm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bg3-NM-DlO" secondAttribute="trailing" constant="20" id="gUh-YO-Hlj"/>
+                            <constraint firstItem="bg3-NM-DlO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pJr-U2-ADx"/>
+                            <constraint firstItem="9V6-g5-r3U" firstAttribute="top" secondItem="1cl-CO-lkn" secondAttribute="bottom" constant="5" id="pdF-nj-rz5"/>
+                            <constraint firstItem="9Cp-c3-Exd" firstAttribute="top" secondItem="bg3-NM-DlO" secondAttribute="bottom" constant="20" id="reg-Fq-76M"/>
+                            <constraint firstItem="bg3-NM-DlO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="xWN-vN-Cgs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calculateButton" destination="XU0-48-NH1" id="jcM-cJ-2aM"/>
+                        <outlet property="ethanolPriceLabel" destination="9Cp-c3-Exd" id="ZyJ-GC-5uA"/>
+                        <outlet property="ethanolPriceTextField" destination="wgJ-ln-SsN" id="qCL-Vu-vQC"/>
+                        <outlet property="gasPriceLabel" destination="1cl-CO-lkn" id="UdN-C0-aBA"/>
+                        <outlet property="gasPriceTextField" destination="9V6-g5-r3U" id="d0D-kl-1m3"/>
+                        <outlet property="logoImageView" destination="bg3-NM-DlO" id="FSI-MJ-B7n"/>
+                        <outlet property="resultLabel" destination="XOg-cr-1Ok" id="g8i-fw-nqu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="3.1484257871064472"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
